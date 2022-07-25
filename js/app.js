@@ -100,7 +100,7 @@ if (document.querySelector('.footer')) {
 
 // // Активний клас для меню при скролі
 function activeClassMenu() {
-  const menuLinks = document.querySelectorAll('.link a[href^="#s-"]');
+  const menuLinks = document.querySelectorAll('.nav__item a[href^="#s-"]');
   const sections = document.querySelectorAll('section');
   $(window).on('scroll load', () => {
     const scrollTop = scrollY;
