@@ -451,12 +451,16 @@
 
   .nav__list > *:not(:last-child) {
     margin-right: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .nav__item {
     width: 100%;
     text-align: center;
+  }
+  
+  .nav__link {
+    font-size: 18px;
   }
 
   .header__menu-button {
