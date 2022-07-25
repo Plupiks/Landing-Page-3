@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts Start -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap&_v=20220721214322"
+    rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600;700&display=swap&_v=20220721214322"
+    rel="stylesheet">
+
+  <!-- Standart font icon -->
+  <link rel="stylesheet" href="fonts/fontello/css/fontello.css">
+  <link rel="stylesheet" href="fonts/fontello-standart-icons/css/fontello.css?_v=20220721214322">
+  <!-- Fonts END -->
+
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css?_v=20220721214322" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220721214322"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- Menu -->
+  <link rel="stylesheet" href="css/menu.css">
+  <script src="js/menu.js" defer></script>
+
+  <link rel="stylesheet" href="css/style.css?_v=20220721214322">
+  <title>Main</title>
+
+  <style>
+    :root {
+      /* Commons */
+      --mainTextColor: #222;
+      --buttonBorderColor: #222;
+      --buttonBGColor: #222;
+
+      --decorColor: #d0e4f4;
+
+      /* Footer */
+      --footerBG: #222;
+      --footerTextColor: #fff;
+      --linkHover: #dddddd;
+
+      /* Fonts */
+      --mainFont: 'Poppins', sans-serif;
+      --secondaryFont: 'Playfair Display', serif;
+      --extraFont: 'Oswald', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header" id="headerMenu">
+      <div class="container">
+        <div class="header__body">
+          <div class="header__logo">
+            <img src="img/logo.svg" alt="Header logo">
+            <span>Site Name</span>
+          </div>
+          <nav class="header__nav nav" id="headerMenu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#s-hero" class="nav__link">
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#s-benefits" class="nav__link">
+                  <span>Benefits</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#s-services" class="nav__link">
+                  <span>Services</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#s-gallery" class="nav__link">
+                  <span>Gallery</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#s-contact" class="nav__link">
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="backdrop">
+            <span>Backdrop</span>
+          </div>
+          <button class="header__menu-button menu-button">
+            <div class="menu-button__line"></div>
+            <div class="menu-button__line"></div>
+            <div class="menu-button__line"></div>
+            <span>Menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="s-hero">
+        <div class="container">
+          <div class="hero__body">
+            <div class="hero__column hero__column_text">
+              <div class="hero__text-content" data-aos="zoom-in">
+                <h1 class="hero__title">
+                  <span class="typed" id="typed"
+                    data-typed-items="IT Solutions, Second Lorem Text, Third Lorem Text, Fourth Lorem Text"></span>
+                </h1>
+                <p class="hero__text">
+                  Sample text. Click to select the text box. Click again or double click to start editing the text. Duis
+                  aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <a href="#" class="hero__button button">Learn more</a>
+              </div>
+            </div>
+            <div class="hero__column hero__column_image">
+              <div class="hero__image" data-aos="zoom-in" data-aos-delay="400">
+                <img src="img/01.jpg" alt="hero image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="benefits" id="s-benefits">
+        <div class="benefits_background-color"></div>
+        <div class="container">
+          <div class="benefits__body" data-aos="fade-up">
+            <div class="benefits__column benefits__column_image">
+              <div class="benefits__image">
+                <img src="img/02.jpg" alt="benefits image">
+              </div>
+            </div>
+            <div class="benefits__column benefits__column_cards">
+              <div class="benefits__cards">
+                <!-- Card 1 -->
+                <div class="benefits__card card" data-aos="fade-left" data-aos-delay="200">
+                  <div class="card__body">
+                    <h2 class="card__title">Pixel Perfect</h2>
+                    <p class="card__text">
+                      Sample text. Click to select the text box. Click again or double click to start editing the text.
+                    </p>
+                  </div>
+                </div>
+                <!-- Card 1 -->
+
+                <!-- Card 2 -->
+                <div class="benefits__card card" data-aos="fade-left" data-aos-delay="400">
+                  <div class="card__body">
+                    <h2 class="card__title">Web Design</h2>
+                    <p class="card__text">
+                      Sample text. Click to select the text box. Click again or double click to start editing the text.
+                    </p>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+
+                <!-- Card 3 -->
+                <div class="benefits__card card" data-aos="fade-left" data-aos-delay="600">
+                  <div class="card__body">
+                    <h2 class="card__title">Development</h2>
+                    <p class="card__text">
+                      Sample text. Click to select the text box. Click again or double click to start editing the text.
+                    </p>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+
+                <!-- Card 4 -->
+                <div class="benefits__card card" data-aos="fade-left" data-aos-delay="800">
+                  <div class="card__body">
+                    <h2 class="card__title">Branding</h2>
+                    <p class="card__text">
+                      Sample text. Click to select the text box. Click again or double click to start editing the text.
+                    </p>
+                  </div>
+                </div>
+                <!-- Card 4 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services" id="s-services">
+        <div class="container">
+          <div class="services__body">
+            <div class="services__row services__row_1">
+              <div class="services__image" data-aos="zoom-in">
+                <img src="img/03.jpg" alt="services image">
+              </div>
+              <p class="services__text" data-aos="fade-right">
+                We’ve been working with some awesome teams around the world.
+              </p>
+            </div>
+            <div class="services__row  services__row_2 services-row-2">
+              <div class="services-row-2__background-color"></div>
+              <div class="services__cards">
+                <!-- Card 1 -->
+                <div class="services__card s-card" data-aos="fade-right" data-aos-delay="0">
+                  <div class="s-card__body">
+                    <div class="s-card__column">
+                      <i class="s-card__icon icon-facebook"></i>
+                    </div>
+                    <div class="s-card__column s-card__column_text">
+                      <h3 class="s-card__title">Sample Headline</h3>
+                      <p class="s-card__text">
+                        Sample text. Click to select the text box. Click again or double click to start editing the
+                        text.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 1 -->
+
+                <!-- Card 2 -->
+                <div class="services__card s-card" data-aos="fade-right" data-aos-delay="200">
+                  <div class="s-card__body">
+                    <div class="s-card__column">
+                      <i class="s-card__icon icon-instagram"></i>
+                    </div>
+                    <div class="s-card__column s-card__column_text">
+                      <h3 class="s-card__title">Sample Headline</h3>
+                      <p class="s-card__text">
+                        Sample text. Click to select the text box. Click again or double click to start editing the
+                        text.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+
+                <!-- Card 3 -->
+                <div class="services__card s-card" data-aos="fade-right" data-aos-delay="400">
+                  <div class="s-card__body">
+                    <div class="s-card__column">
+                      <i class="s-card__icon icon-twitter"></i>
+                    </div>
+                    <div class="s-card__column s-card__column_text">
+                      <h3 class="s-card__title">Sample Headline</h3>
+                      <p class="s-card__text">
+                        Sample text. Click to select the text box. Click again or double click to start editing the
+                        text.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+
+                <!-- Card 4 -->
+                <div class="services__card s-card" data-aos="fade-right" data-aos-delay="600">
+                  <div class="s-card__body">
+                    <div class="s-card__column">
+                      <i class="s-card__icon icon-linkedin"></i>
+                    </div>
+                    <div class="s-card__column s-card__column_text">
+                      <h3 class="s-card__title">Sample Headline</h3>
+                      <p class="s-card__text">
+                        Sample text. Click to select the text box. Click again or double click to start editing the
+                        text.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 4 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery" id="s-gallery">
+        <div class="gallery__background-line"></div>
+        <div class="container">
+          <div class="gallery__body">
+            <div class="gallery__title">
+              <h2>Branding and Digital Agency</h2>
+            </div>
+            <div class="gallery__column gallery__column_images">
+              <div class="gallery__images">
+                <!-- Gallery Image 1 -->
+                <div class="gallery__image">
+                  <div class="gallery__image_item" data-aos="zoom-in">
+                    <img src="img/gallery01.jpg" alt="gallery image 1" data-fancybox="gallery-group">
+                  </div>
+                </div>
+                <!-- Gallery Image 1 -->
+
+                <!-- Gallery Image 2 -->
+                <div class="gallery__image">
+                  <div class="gallery__image_item" data-aos="zoom-in">
+                    <img src="img/gallery02.jpg" alt="gallery image 2" data-fancybox="gallery-group">
+                  </div>
+                </div>
+                <!-- Gallery Image 2 -->
+
+                <!-- Gallery Image 3 -->
+                <div class="gallery__image">
+                  <div class="gallery__image_item" data-aos="zoom-in">
+                    <img src="img/gallery03.jpg" alt="gallery image 3" data-fancybox="gallery-group">
+                  </div>
+                </div>
+                <!-- Gallery Image 3 -->
+
+                <!-- Gallery Image 4 -->
+                <div class="gallery__image">
+                  <div class="gallery__image_item" data-aos="zoom-in">
+                    <img src="img/gallery04.jpg" alt="gallery image 4" data-fancybox="gallery-group">
+                  </div>
+                </div>
+                <!-- Gallery Image 4 -->
+
+                <!-- Gallery Image 5 -->
+                <div class="gallery__image">
+                  <div class="gallery__image_item" data-aos="zoom-in">
+                    <img src="img/gallery05.jpg" alt="gallery image 5" data-fancybox="gallery-group">
+                  </div>
+                </div>
+                <!-- Gallery Image 5 -->
+
+                <!-- Gallery Image 6 -->
+                <div class="gallery__image">
+                  <div class="gallery__image_item" data-aos="zoom-in">
+                    <img src="img/gallery06.jpg" alt="gallery image 6" data-fancybox="gallery-group">
+                  </div>
+                </div>
+                <!-- Gallery Image 6 -->
+              </div>
+            </div>
+            <div class="gallery__column gallery__column_text">
+              <div class="gallery__text-content" data-aos="fade-left">
+                <p>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <a href="#" class="gallery__button button">learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="s-contact">
+        <div class="contact__background-line"></div>
+        <div class="container">
+          <div class="contact__body">
+            <div class="contact__column contact__column_map" data-aos="fade-up">
+              <div class="contact__map">
+                <img src="img/map.jpg" alt="contact map">
+              </div>
+              <h2 class="contact__title">Lorem ipsum dolor sit amet.</h2>
+              <p class="contact__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non fuga sed rem quas
+                laboriosam sequi illum nostrum quae, qui debitis aliquam quibusdam alias sint vel voluptatum harum
+                libero
+                natus ratione?
+              </p>
+            </div>
+            <div class="contact__column contact__column_image">
+              <div class="contact__image">
+                <img src="img/04.jpg" alt="contact image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__body">
+          <div class="footer__row">
+            <div class="footer__column footer__column_1">
+              <a class="footer__logo footer-logo" href="#s-hero">
+                <!--START BLOCK HeaderLogo-->
+                <img src="img/logo.svg" alt="Site Name" class="footer-logo__icon">
+                <!--END BLOCK HeaderLogo-->
+
+                <!--START BLOCK HeaderName-->
+                <div class="footer-logo__text">Site Name</div>
+                <!--END BLOCK HeaderName-->
+              </a>
+              <div class="footer__address">
+                A108 Adam Street
+                NY 535022, USA
+              </div>
+              <div class="footer__phone">
+                <span class="footer__phone-title">Phone:</span>
+                <span class="footer__phone-text footer-item__text">+1 5589 55488 55</span>
+              </div>
+              <div class="footer__mail">
+                <span class="footer__mail-title ">Email:</span>
+                <span class="footer__mail-text footer-item__text">info@example.com</span>
+              </div>
+              <div class="footer__social social">
+                <a href="#" class="social__item">
+                  <i class="icon-twitter"></i>
+                </a>
+                <a href="#" class="social__item">
+                  <i class="icon-facebook"></i>
+                </a>
+                <a href="#" class="social__item">
+                  <i class="icon-instagram"></i>
+                </a>
+                <a href="#" class="social__item">
+                  <i class="icon-linkedin"></i>
+                </a>
+              </div>
+            </div>
+            <div class="footer__column">
+              <ul class="footer__links">
+                <!--START BLOCK Hero-->
+                <a href="#s-hero" class="footer__link">
+                  <i class="icon-arrow-right"></i>
+                  <span>Home</span>
+                </a>
+                <!-- END BLOCK Hero-->
+
+                <!--START BLOCK Benefits-->
+                <a href="#s-benefits" class="footer__link">
+                  <i class="icon-arrow-right"></i>
+                  <span>Benefits</span>
+                </a>
+                <!-- END BLOCK Benefits-->
+
+                <!--START BLOCK Services-->
+                <a href="#s-services" class="footer__link">
+                  <i class="icon-arrow-right"></i>
+                  <span>Services</span>
+                </a>
+                <!-- END BLOCK Services-->
+
+                <!--START BLOCK Gallery-->
+                <a href="#s-gallery" class="footer__link">
+                  <i class="icon-arrow-right"></i>
+                  <span>Gallery</span>
+                </a>
+                <!-- END BLOCK Gallery-->
+
+                <!--START BLOCK Contact-->
+                <a href="#s-contact" class="footer__link">
+                  <i class="icon-arrow-right"></i>
+                  <span>Contact</span>
+                </a>
+                <!-- END BLOCK Contact-->
+
+                <!--START BLOCK Impressum-->
+                <a href="impressum.html" class="footer__link">
+                  <i class="icon-arrow-right"></i>
+                  <span>Impressum und Datenschutzerklärung</span>
+                </a>
+                <!-- END BLOCK Impressum-->
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h4 class="footer__title">Footer Info</h4>
+              <div class="footer__text">
+                Ihre Website ist so programmiert, dass sie keine Cookies sammelt, deswegen brauchen Sie auch
+                keine
+                weiteren
+                Zustimmungsfenstern für eine Zuslassung der Cookies. Das wird auch in ihrer - Ihre Website ist
+                so
+                programmiert, dass sie keine Cookies sammelt, deswegen brauchen Sie auch keine weiteren
+                Zustimmungsfenstern
+                für eine Zuslassung der Cookies. Das wird auch in ihrer
+              </div>
+            </div>
+          </div>
+          <div class="footer__row footer__row_2">
+            <div class="footer-bottom__text">
+              Deine Webseite - All Rights Reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?_v=20220721214322"></script>
+
+  <!-- Fancybox -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20220721214322"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- App.js -->
+  <script type="module" src="js/app.js?_v=20220721214322"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

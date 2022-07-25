@@ -1,0 +1,67 @@
+.impressum {
+  padding-top: 122px;
+}
+
+.impressum__body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #111111;
+  cursor: default;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.impressum-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.button-up {
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  position: fixed;
+  z-index: 3;
+  top: 93vh;
+  right: 20px;
+  background: #303538;
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-up:hover {
+  background: #41484d;
+}
+
+.button-show {
+  pointer-events: all;
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+  position: relative;
+  z-index: 98;
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-left: 2px solid white;
+  border-right: 1px solid white;
+}
+
+@media only screen and (max-width: 430px) {
+  .impressum-title {
+    font-size: 24px;
+  }
+}

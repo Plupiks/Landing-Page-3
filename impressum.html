@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--START BLOCK Hero-->
+  <meta name="description" content="{HeaderName-Sitename}">
+  <meta property="og:image" content="{Hero-Image}">
+  <!-- END BLOCK Hero-->
+
+  <!--START BLOCK HeroDownload-->
+  <meta name="description" content="{HeaderName-Sitename}">
+  <meta property="og:image" content="{HeroDownload-Image}">
+  <!-- END BLOCK HeroDownload-->
+
+  <!--START BLOCK HeroPan-->
+  <meta name="description" content="{HeaderName-Sitename}">
+  <meta property="og:image" content="{HeroPan-Image}">
+  <!-- END BLOCK HeroPan-->
+
+  <!-- Fonts Start -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap&_v=20220712181834"
+    rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Oswald:wght@400;500;700&display=swap&_v=20220712181834"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/fontello-standart-icons/css/fontello.css?_v=20220712181834">
+  <!-- Fonts END -->
+
+  <link rel="stylesheet" href="css/style.css?_v=20220712181834">
+  <link rel="stylesheet" href="css/impressum.css">
+  <!--START BLOCK Hero-->
+  <title>{HeaderName-Seitename} - {Hero-Title}</title>
+  <!-- END BLOCK Hero-->
+
+  <!--START BLOCK HeroDownload-->
+  <title>{HeaderName-Seitename} - {HeroDownload-Title}</title>
+  <!-- END BLOCK HeroDownload-->
+
+  <!--START BLOCK HeroPan-->
+  <title>{HeaderName-Seitename} - {HeroPan-Title}</title>
+  <!-- END BLOCK HeroPan-->
+
+  <style>
+    :root {
+
+      /* Header */
+      --headerBG: #6B7479;
+      --headerTextColor: #fff;
+      --headerTextColorM: #222;
+
+      --headerTextHoverColor: #ffd000;
+
+      /* Header Mobile */
+      --burgerMenuLines: #fff;
+      --burgerMenuLinesActive: #fff;
+      --burgerMenuLinesBG: #222;
+      --burgerMenuContentBG: #fff;
+
+      /* Commons */
+      --mainTextColor: #222;
+      --mainLightTextColor: #fff;
+
+      /* Hero */
+      --textBGColor: rgba(255, 255, 255, 0.7);
+
+      /* Social */
+      --socialBGColor: #1A1E21;
+      --socialBGColorHover: #0c0e0f;
+      --socialIconHoverColor: #ffd059;
+
+      /* Benefits */
+      --benefitsBG: #F2F2F2;
+      --cardBGColor: #6B7479;
+
+      /* Info */
+      --buttonBGColor: #6B7479;
+      --buttonBGColorHover: #485053;
+
+      /* Footer */
+      --footerBG: #6B7479;
+      --footerTextColor: #fff;
+      --linkHover: #2a3740;
+
+      /* Fonts */
+      --mainFont: 'Montserrat', sans-serif;
+      --secondaryFont: 'Oswald', sans-serif;
+      --headerFont: 'Abel', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <a href="index.html#s-hero" class="header__logo logo">
+            <!--START BLOCK HeaderLogo-->
+            <img src="{HeaderLogo-Logo}" alt="{HeaderName-Sitename}" class="logo__icon">
+            <!--END BLOCK HeaderLogo-->
+
+            <!--START BLOCK HeaderName-->
+            <div class="logo__text">{HeaderName-Sitename}</div>
+            <!--END BLOCK HeaderName-->
+          </a>
+          <ul class="nav__links">
+            <!-- START BLOCK Hero -->
+            <li class="nav__link link">
+              <a href="index.html#s-hero" class="link__items">{Navigation-navi1}</a>
+            </li>
+            <!-- END BLOCK Hero -->
+
+            <!-- START BLOCK HeroPan -->
+            <li class="nav__link link">
+              <a href="index.html#s-hero" class="link__items">{Navigation-navi1}</a>
+            </li>
+            <!-- END BLOCK HeroPan -->
+
+            <!-- START BLOCK HeroPanDownload -->
+            <li class="nav__link link">
+              <a href="index.html#s-hero" class="link__items">{Navigation-navi1}</a>
+            </li>
+            <!-- END BLOCK HeroPanDownload -->
+
+
+            <li class="nav__link link">
+              <a href="index.html#s-info" class="link__items">{Navigation-navi2}</a>
+            </li>
+            <li class="nav__link link">
+              <a href="index.html#s-portfolio" class="link__items">{Navigation-navi3}</a>
+            </li>
+            <li class="nav__link link">
+              <a href="index.html#s-about" class="link__items">{Navigation-navi4}</a>
+            </li>
+          </ul>
+
+          <div class="burger-menu">
+            <div class="burger-menu__button">
+              <input class="checkbox" type="checkbox" id="checkbox"></input>
+              <label class="burger-menu__lines" for="checkbox">
+                <div class="burger-menu__line"></div>
+                <div class="burger-menu__line"></div>
+                <div class="burger-menu__line"></div>
+              </label>
+            </div>
+            <div class="burger-menu__content"></div>
+            <div class="backdrop"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="impressum" id="s-impressum">
+        <div class="container">
+          <div class="impressum__body">
+            <h3 class="impressum-title title">
+              Impressum und Datenschutzerklärung
+            </h3>
+            {Impressum-Impressum-Inhalt}
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--START BLOCK Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__body">
+          <div class="footer__row">
+            <div class="footer__column footer__column_1">
+              <a class="footer__logo footer-logo" href="index.html#s-hero">
+                <!--START BLOCK HeaderLogo-->
+                <img src="{HeaderLogo-Logo}" alt="{HeaderName-Sitename}" class="footer-logo__icon">
+                <!--END BLOCK HeaderLogo-->
+
+                <!--START BLOCK HeaderName-->
+                <div class="footer-logo__text">{HeaderName-Sitename}</div>
+                <!--END BLOCK HeaderName-->
+              </a>
+              <div class="footer__address">{Footer-Address}</div>
+              <div class="footer__phone">
+                <span class="footer__phone-title">{Footer-PhoneTitle}</span>
+                <span class="footer__phone-text footer-item__text">{Footer-PhoneText}</span>
+              </div>
+              <div class="footer__mail">
+                <span class="footer__mail-title ">{Footer-EmailTitle}</span>
+                <span class="footer__mail-text footer-item__text">{Footer-EmailText}</span>
+              </div>
+            </div>
+            <div class="footer__column">
+              <ul class="footer__links">
+                <!--START BLOCK Hero-->
+                <a href="index.html#s-hero" class="footer__link">
+                  <i class="icon-arrow-right"></i>
+                  <span>{Navigation-navi1}</span>
+                </a>
+                <!-- END BLOCK Hero-->
+
+                <!--START BLOCK HeroPan-->
+                <a href="index.html#s-hero" class="footer__link">
+                  <i class="icon-arrow-right"></i>
+                  <span>{Navigation-navi1}</span>
+                </a>
+                <!-- END BLOCK HeroPan-->
+
+                <!--START BLOCK HeroPanDownload-->
+                <a href="index.html#s-hero" class="footer__link">
+                  <i class="icon-arrow-right"></i>
+                  <span>{Navigation-navi1}</span>
+                </a>
+                <!-- END BLOCK HeroPanDownload-->
+
+                <!--START BLOCK Info-->
+                <a href="index.html#s-info" class="footer__link">
+                  <i class="icon-arrow-right"></i>
+                  <span>{Navigation-navi2}</span>
+                </a>
+                <!-- END BLOCK Info-->
+
+                <!--START BLOCK Portfolio-->
+                <a href="index.html#s-portfolio" class="footer__link">
+                  <i class="icon-arrow-right"></i>
+                  <span>{Navigation-navi3}</span>
+                </a>
+                <!-- END BLOCK Portfolio-->
+
+                <!--START BLOCK About-->
+                <a href="index.html#s-about" class="footer__link">
+                  <i class="icon-arrow-right"></i>
+                  <span>{Navigation-navi4}</span>
+                </a>
+                <!-- END BLOCK About-->
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h4 class="footer__title">{Footer-Title}</h4>
+              <div class="footer__text">{Footer-Text}</div>
+            </div>
+          </div>
+          <div class="footer__row footer__row_2">
+            <div class="footer-bottom__text">
+              {HeaderName-Sitename} - All Rights Reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--END BLOCK Footer -->
+
+    <button class="button-up">
+      <i class="icon-arrow-up"></i>
+    </button>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220712181834"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- App.js -->
+  <script src="js/app-impressum.js"></script>
+</body>
+
+</html>
