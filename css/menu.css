@@ -483,11 +483,7 @@
     border: none;
   }
 
-  .header__menu-button menu-button__text {
-    display: none;
-  }
-
-  .header__menu-button[data-custom-button='true'] {
+  .header__menu-button .menu-button__text {
     display: none;
   }
 }
