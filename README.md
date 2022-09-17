@@ -13,7 +13,6 @@ The following elements are present in this landing:
 <br>
 
 ## Libraries used
-- `Count.js` - number count animation
 - `Typed.js` - typed text
 - `Fancybox.js` - image gallery
 - `AOS` - animation on scroll
