@@ -1,6 +1,6 @@
 # Landing Page (Digital Agency)
 
-![](https://github.com/Plupiks/Landing-Page-Creator-2/blob/faa66cdcbc9f9f13df97f6a643cb3053b4690942/img/creator2.jpg)
+![](https://github.com/Plupiks/Landing-Page-Company-4/blob/f4a2e087085d5dbdafa5b1265be6115b13066ccc/img/digital-agency.jpg)
 
 ## About:
 The following elements are present in this landing:
