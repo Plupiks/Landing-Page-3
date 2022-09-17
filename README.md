@@ -8,7 +8,7 @@ The following elements are present in this landing:
 - Ability to view the image you clicked.
 - Full adaptive website with beautiful design
 
-[Link to the working page](https://plupiks.github.io/Landing-Page-Company-4/)
+[Link to the working page](https://plupiks.github.io/Landing-Page-3/)
 
 <br>
 
