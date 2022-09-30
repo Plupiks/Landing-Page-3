@@ -7,7 +7,7 @@ const headerMenuOptions = {
   enableAnimation: true,
 };
 
-const headerMenu = function () {
+function headerMenu() {
   // Сontainer selection
   const headerMenuContainer = headerMenuOptions.hasOwnProperty('container')
     ? document.querySelector(headerMenuOptions.container)
@@ -22,7 +22,7 @@ const headerMenu = function () {
 
   // Header menu elements selection
   const headerMenuLogo = headerMenuContainer.querySelector('.header__logo');
-  const headerMenyBody = headerMenuContainer.querySelector('.header__nav');
+  const headerMenuBody = headerMenuContainer.querySelector('.header__nav');
   const headerMenuList = headerMenuContainer.querySelector('.nav__list');
   const headerMenyLinks = headerMenuContainer.querySelectorAll('.nav__link');
   const backdropElem = headerMenuContainer.querySelector('.backdrop');
@@ -80,7 +80,7 @@ const headerMenu = function () {
     $(window).on('load resize', () => {
       const headerMenuHeight = headerMenuContainer.clientHeight;
 
-      if (window.matchMedia("(max-width: 992px)").matches) {
+      if ($(window).width() <= 992) {
         mobileMenuBody.style.paddingTop = headerMenuHeight + 20 + 'px';
       } else {
         mobileMenuBody.style.paddingTop = '';
@@ -93,16 +93,16 @@ const headerMenu = function () {
     // Toggle aria-expanded for sliding navigation
     headerMenuButton.addEventListener('click', () => {
       // Slide menu when click button
-      if (headerMenyBody.getAttribute('aria-expanded') === 'false') {
-        headerMenyBody.setAttribute('aria-expanded', true);
-      } else if (headerMenyBody.getAttribute('aria-expanded') === 'true') {
-        headerMenyBody.setAttribute('aria-expanded', false);
+      if (!headerMenuBody.hasAttribute('aria-expanded') || headerMenuBody.getAttribute('aria-expanded') === 'false') {
+        headerMenuBody.setAttribute('aria-expanded', true);
+      } else if (headerMenuBody.getAttribute('aria-expanded') === 'true') {
+        headerMenuBody.setAttribute('aria-expanded', false);
       }
 
       // Slide animation when menu slide left/right
-      if (headerMenuList.getAttribute('data-slide') === 'right') {
+      if (!headerMenuList.hasAttribute('data-slide') || headerMenuList.getAttribute('data-slide') === 'right') {
         headerMenuList.setAttribute('data-slide', 'left');
-      } else {
+      } else if (headerMenuList.getAttribute('data-slide') === 'left') {
         headerMenuList.setAttribute('data-slide', 'right');
       }
 
@@ -122,14 +122,8 @@ const headerMenu = function () {
       // Disable backdrop animation when website load
       backdropElem.classList.remove('backdropOff');
       backdropElem.classList.remove('backdropOn');
-
-      if ($(window).width() <= 992) {
-        headerMenyBody.setAttribute('aria-expanded', false);
-        headerMenuList.setAttribute('data-slide', 'right');
-      } else {
-        headerMenyBody.removeAttribute('aria-expanded');
-        headerMenuList.removeAttribute('data-slide');
-      }
+      headerMenuBody.removeAttribute('aria-expanded');
+      headerMenuList.removeAttribute('data-slide');
     });
   }
 
@@ -155,7 +149,7 @@ const headerMenu = function () {
   // Hide menu when we click on backdrop
   function hideMenuOnClickBackdrop() {
     backdropElem.addEventListener('click', () => {
-      headerMenyBody.setAttribute('aria-expanded', false);
+      headerMenuBody.setAttribute('aria-expanded', false);
       headerMenuList.setAttribute('data-slide', 'right');
 
       backdropElem.classList.remove('backdropOn');
@@ -169,7 +163,7 @@ const headerMenu = function () {
       headerMenyLinks.forEach((link) => {
         link.addEventListener('click', () => {
           if (window.innerWidth <= 992) {
-            headerMenyBody.setAttribute('aria-expanded', false);
+            headerMenuBody.setAttribute('aria-expanded', false);
             headerMenuList.setAttribute('data-slide', 'right');
 
             backdropElem.classList.remove('backdropOn');
@@ -179,5 +173,5 @@ const headerMenu = function () {
       });
     });
   }
-};
+}
 headerMenu();
