@@ -80,7 +80,7 @@ const headerMenu = function () {
     $(window).on('load resize', () => {
       const headerMenuHeight = headerMenuContainer.clientHeight;
 
-      if ($(window).width() <= 992) {
+      if (window.matchMedia("(max-width:992px)").matches) {
         mobileMenuBody.style.paddingTop = headerMenuHeight + 20 + 'px';
       } else {
         mobileMenuBody.style.paddingTop = '';
